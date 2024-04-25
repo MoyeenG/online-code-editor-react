@@ -1,0 +1,60 @@
+Html Webpack Plugin:
+<pre>
+  Error: html-webpack-plugin could not minify the generated output.
+  In production mode the html minifcation is enabled by default.
+  If you are not generating a valid html output please disable it manually.
+  You can do so by adding the following setting to your HtmlWebpackPlugin config:
+  |
+  |    minify: false
+  |
+  See https://github.com/jantimon/html-webpack-plugin#options for details.
+  For parser dedicated bugs please create an issue here:
+  https://danielruf.github.io/html-minifier-terser/
+  Parse Error: <meta name="description" content="A Codepen clone - made with React" /> 
+          <link rel="apple-touch-icon" href="/logo192.png" /> 
+          <!-- 
+        manifest.json provides metadata used when your web app is installed on a 
+        user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/ 
+      --> 
+          <link rel="manifest" href="/manifest.json" /> 
+          <!-- 
+        Notice the use of  in the tags above. 
+        It will be replaced with the URL of the `public` folder during the build. 
+        Only files inside the `public` folder can be referenced from the HTML. 
+        Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will 
+        work correctly both with client-side routing and a non-root public URL. 
+        Learn how to configure a non-root public URL by running `npm run build`. 
+      --> 
+          <title>Code editor</title> 
+      <link href="/static/css/2.e72f2039.chunk.css" rel="stylesheet"><link href="/static/css/main.4af3b03c.chunk.css" rel="stylesheet"></head> 
+      <body> 
+          <noscript>You need to enable JavaScript to run this app.</noscript> 
+          <div id="root"></div> 
+          <!-- 
+       
+      --><script>!function(e){function r(r){for(var n,l,c=r[0],p=r[1],f=r[2],a=0,s=[];a<c.length;a++)l=c[a],Object.prototype.hasOwnProperty.call(o,l)&&  o[l]&&s.push(o[l][0]),o[l]=0;for(n in p)Object.prototype.hasOwnProperty.call(p,n)&&(e[n]=p[n]);for(i&&i(r);s.length;)s.shift()();return u.push.apply(  u,f||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,c=1;c<t.length;c++){var p=t[c];0!==o[p]&&(n=!1)}n&&(u.splice(r--,1),e=l(l  .s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.ex  ports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!==t  ypeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=  function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"===typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.definePr  operty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=funct  ion(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOw  nProperty.call(e,r)},l.p="/";var c=this["webpackJsonpcodepen-clone"]=this["webpackJsonpcodepen-clone"]||[],p=c.push.bind(c);c.push=r,c=c.slice();for(  var f=0;f<c.length;f++)r(c[f]);var i=p;t()}([]);
+  //# sourceMappingURL=runtime-main.a2529062.js.map</script><script src="/static/js/2.2648939b.chunk.js"></script><script src="/static/js/main.38990192  .chunk.js"></script></body> 
+  </html>
+  
+  - htmlparser.js:244 new HTMLParser
+    [Online-Code-Editor-using-React---React-Project---bvwn42ccr4gm]/[html-minifier-terser]/src/htmlparser.js:244:13
+  
+  - htmlminifier.js:993 minify
+    [Online-Code-Editor-using-React---React-Project---bvwn42ccr4gm]/[html-minifier-terser]/src/htmlminifier.js:993:3
+  
+  - htmlminifier.js:1354 Object.exports.minify
+    [Online-Code-Editor-using-React---React-Project---bvwn42ccr4gm]/[html-minifier-terser]/src/htmlminifier.js:1354:16
+  
+  - index.js:1013 HtmlWebpackPlugin.minifyHtml
+    [Online-Code-Editor-using-React---React-Project---bvwn42ccr4gm]/[html-webpack-plugin]/index.js:1013:46
+  
+  - index.js:429 HtmlWebpackPlugin.postProcessHtml
+    [Online-Code-Editor-using-React---React-Project---bvwn42ccr4gm]/[html-webpack-plugin]/index.js:429:40
+  
+  - index.js:254 
+    [Online-Code-Editor-using-React---React-Project---bvwn42ccr4gm]/[html-webpack-plugin]/index.js:254:25
+  
+  - task_queues:96 processTicksAndRejections
+    node:internal/process/task_queues:96:5
+  
+</pre>
